@@ -1,4 +1,4 @@
-const DEMO_VERSION = "2026-05-07-pages";
+const DEMO_VERSION = "2026-05-07-local-images";
 const STORE_KEY = "smileJapaneseDemoState";
 const SESSION_KEY = "smileJapaneseDemoSession";
 const LAST_ORDER_KEY = "smileJapaneseLastOrder";
@@ -14,7 +14,7 @@ const DEFAULT_COURSES = [
     audience: "零基礎成人",
     status: "可試看",
     kana: "あ",
-    image: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/courses/kana-intro.webp",
     description: "平假名、片假名、發音口型與基本拍音，適合完全零基礎的成人學生先建立安全感。",
     chapters: [
       { id: "kana-01", title: "平假名あ行與發音口型", duration: "12 分鐘", type: "試看" },
@@ -33,7 +33,7 @@ const DEFAULT_COURSES = [
     audience: "五十音完成",
     status: "熱賣中",
     kana: "日",
-    image: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/courses/n5-basic.webp",
     description: "從自我介紹、名詞句、助詞到日常句型，搭配章節測驗與直播練習，建立第一段穩定日語基礎。",
     chapters: [
       { id: "n5-01", title: "自我介紹：私はリンです", duration: "14 分鐘", type: "試看" },
@@ -54,7 +54,7 @@ const DEFAULT_COURSES = [
     audience: "N5-N4",
     status: "可預約",
     kana: "話",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/courses/conversation.webp",
     description: "每週主題演練點餐、問路、購物、旅館與自我介紹，讓學生把錄播內容轉成開口能力。",
     chapters: [
       { id: "talk-01", title: "餐廳點餐：お願いします", duration: "60 分鐘", type: "直播" },
@@ -72,7 +72,7 @@ const DEFAULT_COURSES = [
     audience: "N5 完成",
     status: "即將開課",
     kana: "進",
-    image: "https://images.unsplash.com/photo-1480796927426-f609979314bd?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/courses/n4-reading.webp",
     description: "強化長句理解、閱讀速度與考前題型策略，適合已經完成 N5 並準備往 N4 前進的學生。",
     chapters: [
       { id: "n4-01", title: "長句拆解與接續詞", duration: "32 分鐘", type: "影片" },
@@ -90,7 +90,7 @@ const DEFAULT_COURSES = [
     audience: "旅遊前",
     status: "開放報名",
     kana: "旅",
-    image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/courses/travel.webp",
     description: "交通、住宿、餐廳與購物情境，出發前快速建立可直接使用的旅遊句型包。",
     chapters: [
       { id: "travel-01", title: "機場與交通", duration: "28 分鐘", type: "影片" },
@@ -108,7 +108,7 @@ const DEFAULT_COURSES = [
     audience: "N5 學生",
     status: "開放報名",
     kana: "文",
-    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/courses/particles.webp",
     description: "針對は、が、を、に、で與ます形、て形做集中練習，補強初學者最常卡住的文法節點。",
     chapters: [
       { id: "particle-01", title: "は與が的語感差異", duration: "24 分鐘", type: "影片" },
@@ -128,9 +128,9 @@ const DEFAULT_PRODUCTS = [
 ];
 
 const DEFAULT_TEACHERS = [
-  { id: "teacher-ando", name: "安達老師", language: "日語", category: "日語老師", specialty: "入門日語 / 成人會話", status: "啟用", photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=500&q=80", slots: "週二、週四晚間" },
-  { id: "teacher-misaki", name: "美咲老師", language: "日語", category: "日語老師", specialty: "發音矯正 / N5-N4", status: "啟用", photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80", slots: "週三、週六下午" },
-  { id: "teacher-sora", name: "Sora 老師", language: "日語", category: "日語老師", specialty: "旅行日語 / 小班練習", status: "啟用", photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80", slots: "週一、週五晚間" },
+  { id: "teacher-ando", name: "安達老師", language: "日語", category: "日語老師", specialty: "入門日語 / 成人會話", status: "啟用", photo: "assets/images/teachers/ando.webp", slots: "週二、週四晚間" },
+  { id: "teacher-misaki", name: "美咲老師", language: "日語", category: "日語老師", specialty: "發音矯正 / N5-N4", status: "啟用", photo: "assets/images/teachers/misaki.webp", slots: "週三、週六下午" },
+  { id: "teacher-sora", name: "Sora 老師", language: "日語", category: "日語老師", specialty: "旅行日語 / 小班練習", status: "啟用", photo: "assets/images/teachers/sora.webp", slots: "週一、週五晚間" },
   { id: "teacher-korean", name: "韓語擴充教師", language: "韓語", category: "後續擴充", specialty: "保留分類，尚未上線", status: "規劃中", photo: "", slots: "待排程" },
   { id: "teacher-english", name: "英語擴充教師", language: "英語", category: "後續擴充", specialty: "保留分類，尚未上線", status: "規劃中", photo: "", slots: "待排程" },
 ];
@@ -379,13 +379,26 @@ function showToast(message) {
   showToast.timer = window.setTimeout(() => toast.classList.remove("is-visible"), 1800);
 }
 
+function fallbackImage(src) {
+  return String(src || "").replace(/\.webp(\?.*)?$/i, ".jpg$1");
+}
+
+function imageMarkup(src, alt, className = "art-picture", loading = "lazy") {
+  const safeSrc = escapeHtml(src || "assets/images/hero/japan-temple.webp");
+  const safeFallback = escapeHtml(fallbackImage(src || "assets/images/hero/japan-temple.webp"));
+  const safeAlt = escapeHtml(alt);
+  const webpSource = /\.webp(\?.*)?$/i.test(src || "") ? `<source srcset="${safeSrc}" type="image/webp">` : "";
+  return `<picture class="${className}">${webpSource}<img src="${safeFallback}" alt="${safeAlt}" loading="${loading}" decoding="async"></picture>`;
+}
+
 function courseCard(course) {
   const action = course.price === 0
     ? `<a class="btn btn-small btn-soft" href="learn.html?course=${course.id}">開始學習</a>`
     : `<button class="btn btn-small btn-primary" type="button" data-add-course="${course.id}">加入購物車</button>`;
   return `
     <article class="course-card" data-category="${escapeHtml(course.category)}" data-status="${escapeHtml(course.status)}">
-      <div class="course-art" data-kana="${escapeHtml(course.kana)}" style="--image: url('${escapeHtml(course.image)}')">
+      <div class="course-art" data-kana="${escapeHtml(course.kana)}">
+        ${imageMarkup(course.image, `${course.title}課程示意圖`)}
         <span class="tag ${course.price === 0 ? "tag-free" : course.category.includes("會話") ? "tag-live" : course.category.includes("進階") ? "tag-paid" : "tag-new"}">${escapeHtml(course.category)}</span>
       </div>
       <div class="card-body">
@@ -481,7 +494,7 @@ function renderCourseDetailPage() {
         </section>
         <aside>
           <section class="teacher-card">
-            <div class="teacher-photo" style="--image: url('${escapeHtml(teacher.photo || course.image)}')"></div>
+            <div class="teacher-photo">${imageMarkup(teacher.photo || course.image, `${teacher.name}講師示意照片`, "teacher-picture")}</div>
             <div>
               <h3>${escapeHtml(teacher.name)}</h3>
               <p>${escapeHtml(teacher.specialty)}</p>
@@ -942,7 +955,7 @@ function renderAdminPage() {
             <div class="teacher-stack">
               ${state.teachers.map((teacher) => `
                 <div class="teacher-card">
-                  <div class="teacher-photo" style="--image: url('${escapeHtml(teacher.photo || "https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=500&q=80")}')"></div>
+                  <div class="teacher-photo">${imageMarkup(teacher.photo || "assets/images/hero/japan-temple.webp", `${teacher.name}講師示意照片`, "teacher-picture")}</div>
                   <div><h3>${escapeHtml(teacher.name)}</h3><p>${escapeHtml(teacher.language)} · ${escapeHtml(teacher.specialty)}</p><span class="state-pill ${statusClass(teacher.status)}">${escapeHtml(teacher.status)}</span><div class="mini-actions"><button class="table-btn" type="button" data-edit-teacher="${teacher.id}">編輯</button><button class="table-btn danger" type="button" data-delete-teacher="${teacher.id}">刪除</button></div></div>
                 </div>
               `).join("")}
@@ -1232,7 +1245,7 @@ function handleCourseSave(form) {
     audience: String(data.get("audience")).trim(),
     status: String(data.get("status")),
     kana: existing?.kana || "日",
-    image: existing?.image || "https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=900&q=80",
+    image: existing?.image || "assets/images/hero/japan-temple.webp",
     description: String(data.get("description")).trim(),
     chapters: existing?.chapters || [
       { id: `${id}-01`, title: "課程暖身與學習目標", duration: "12 分鐘", type: "試看" },
