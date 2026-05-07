@@ -783,7 +783,7 @@ function renderCheckoutPage() {
           <section class="shop-panel">
             <h2>後續可擴充</h2>
             <ul class="feature-list">
-              <li>依實際金流商 API 文件串接</li>
+              <li>依實際金流商 API 文件串接第三方付款服務</li>
               <li>電子發票與會員發票紀錄</li>
               <li>庫存同步與出貨狀態</li>
               <li>付款失敗提醒與人工對帳</li>
