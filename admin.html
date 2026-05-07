@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>後台管理 | 微笑日語</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=qa-20260507d">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html"><span class="brand-mark"><span>日</span></span><span class="brand-text"><strong>微笑日語</strong><small>第一階段上線版</small></span></a>
+        <nav class="site-nav" aria-label="主要導覽">
+          <a href="index.html">首頁</a>
+          <a href="courses.html">課程</a>
+          <a href="dashboard.html">學習中心</a>
+          <a href="booking.html">預約課</a>
+          <a href="shop.html">商城</a>
+          <a class="is-active" href="admin.html">後台</a>
+          <a href="checkout.html">結帳</a>
+        </nav>
+        <div class="nav-actions"><a class="btn btn-outline" href="courses.html">前台預覽</a><a class="btn btn-primary" href="admin.html">新增課程</a></div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="page-shell">
+        <div class="page-title">
+          <div>
+            <h1>後台管理</h1>
+            <p>教師、課程、學生、訂單的營運管理示意，畫面保留足夠資料量，讓客戶理解第一版網站可支援日常管理。</p>
+          </div>
+          <span class="state-pill state-pink">管理員視角</span>
+        </div>
+
+        <section class="stats-grid">
+          <div class="stat-card"><span>上架課程</span><strong>8</strong></div>
+          <div class="stat-card"><span>本月訂單</span><strong>126</strong></div>
+          <div class="stat-card"><span>活躍學生</span><strong>482</strong></div>
+          <div class="stat-card"><span>預約課</span><strong>34</strong></div>
+        </section>
+
+        <section class="section admin-layout">
+          <div>
+            <section class="admin-panel">
+              <div class="panel-head"><h2>課程管理</h2><a class="btn btn-small btn-primary" href="course-detail.html">新增課程</a></div>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>課程名稱</th><th>類型</th><th>價格</th><th>學生數</th><th>狀態</th></tr></thead>
+                  <tbody>
+                    <tr><td>五十音微笑入門課</td><td>免費錄播</td><td>免費</td><td>1,248</td><td><span class="state-pill state-on">上架中</span></td></tr>
+                    <tr><td>微笑日語 N5 初級班</td><td>付費錄播</td><td>NT$2,800</td><td>382</td><td><span class="state-pill state-pink">熱賣中</span></td></tr>
+                    <tr><td>生活日語會話小班</td><td>團體直播</td><td>NT$3,600</td><td>96</td><td><span class="state-pill state-blue">招生中</span></td></tr>
+                    <tr><td>N4 句型與閱讀進階</td><td>付費錄播</td><td>NT$4,200</td><td>42</td><td><span class="state-pill state-warn">草稿</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="admin-panel">
+              <div class="panel-head"><h2>學生名單</h2><span class="price-pill">最近登入</span></div>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>學生</th><th>購買課程</th><th>進度</th><th>最近觀看</th><th>預約狀態</th></tr></thead>
+                  <tbody>
+                    <tr><td>王佳穎</td><td>N5 初級班</td><td>68%</td><td>助詞は/が/を</td><td><span class="state-pill state-on">已預約</span></td></tr>
+                    <tr><td>Leo Huang</td><td>五十音入門</td><td>100%</td><td>總複習</td><td><span class="state-pill">尚未預約</span></td></tr>
+                    <tr><td>林怡安</td><td>會話小班</td><td>35%</td><td>餐廳點餐</td><td><span class="state-pill state-blue">團體班</span></td></tr>
+                    <tr><td>陳志明</td><td>N4 進階候補</td><td>12%</td><td>句型預習</td><td><span class="state-pill state-warn">待付款</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+
+          <aside>
+            <section class="admin-panel">
+              <div class="panel-head"><h2>訂單紀錄</h2><a class="btn btn-small btn-outline" href="order-complete.html">看訂單頁</a></div>
+              <ul class="cart-list">
+                <li class="cart-item"><span class="item-icon">#</span><span><strong class="item-title">ORD-20260507-018</strong><span class="item-meta">N5 初級班 + 御守 · NT$3,180</span></span><span class="state-pill state-on">已付款</span></li>
+                <li class="cart-item"><span class="item-icon">#</span><span><strong class="item-title">ORD-20260507-017</strong><span class="item-meta">團體班預約 · NT$650</span></span><span class="state-pill state-blue">已預約</span></li>
+                <li class="cart-item"><span class="item-icon">#</span><span><strong class="item-title">ORD-20260507-016</strong><span class="item-meta">文具組 · NT$420</span></span><span class="state-pill state-warn">待匯款</span></li>
+              </ul>
+            </section>
+
+            <section class="admin-panel">
+              <div class="panel-head"><h2>教師管理</h2><span class="state-pill state-on">3 位啟用</span></div>
+              <div class="teacher-card">
+                <div class="teacher-photo" style="--image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=500&q=80')"></div>
+                <div><h3>安達老師</h3><p>8 課程 · 16 預約</p><span class="state-pill state-on">啟用</span></div>
+              </div>
+              <div class="teacher-card" style="margin-top: 10px;">
+                <div class="teacher-photo" style="--image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80')"></div>
+                <div><h3>美咲老師</h3><p>3 課程 · 9 預約</p><span class="state-pill state-on">啟用</span></div>
+              </div>
+              <div class="teacher-card" style="margin-top: 10px;">
+                <div class="teacher-photo" style="--image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80')"></div>
+                <div><h3>Sora 老師</h3><p>5 課程 · 9 預約</p><span class="state-pill state-on">啟用</span></div>
+              </div>
+            </section>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer"><div class="page-shell"><span>微笑日語 · 後台管理</span><span>課程管理 / 學生名單 / 訂單紀錄 / 教師管理</span></div></footer>
+    <script src="app.js?v=qa-20260507d"></script>
+  </body>
+</html>

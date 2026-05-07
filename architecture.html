@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>正式版執行架構 | 微笑日語</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=qa-20260507d">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html"><span class="brand-mark"><span>日</span></span><span class="brand-text"><strong>微笑日語</strong><small>展示網站架構</small></span></a>
+        <nav class="site-nav" aria-label="主要導覽">
+          <a href="index.html">首頁</a>
+          <a href="courses.html">課程</a>
+          <a href="dashboard.html">學習中心</a>
+          <a href="booking.html">預約課</a>
+          <a href="shop.html">商城</a>
+          <a href="admin.html">後台</a>
+          <a class="is-active" href="architecture.html">架構</a>
+          <a href="checkout.html">結帳</a>
+        </nav>
+        <div class="nav-actions"><a class="btn btn-outline" href="admin.html">回後台</a><a class="btn btn-primary" href="courses.html">看流程</a></div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="page-shell">
+        <div class="page-title">
+          <div>
+            <h1>正式版執行架構說明</h1>
+            <p>這個 GitHub Pages 版本是可操作展示網站，用來確認視覺、內容與流程；正式上線會用 WordPress / LMS / WooCommerce 與正式主機、網域、金流資料重建或落地。</p>
+          </div>
+          <span class="notice">展示站不含真金流、真資料庫、真 API。</span>
+        </div>
+
+        <section class="architecture-flow">
+          <article class="panel">
+            <span class="step-badge">01</span>
+            <h2>展示網站</h2>
+            <p>目前版本部署在 GitHub Pages，使用 HTML、CSS、JavaScript 與 localStorage 模擬會員、課程、商品、購物車與訂單流程。</p>
+            <ul class="feature-list">
+              <li>方便客戶用手機與桌機直接看流程</li>
+              <li>後續可替換 Logo、老師照片、課程影片、商品圖與文案</li>
+              <li>不放密碼、API key、個資、正式金流資料</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <span class="step-badge">02</span>
+            <h2>第一版網站落地</h2>
+            <p>正式版會以 WordPress 作為網站核心，保留本展示站確認過的資訊架構與視覺方向，再接上可營運的後台與資料管理。</p>
+            <ul class="feature-list">
+              <li>WordPress 管理頁面、品牌內容與基本會員入口</li>
+              <li>LMS 管理課程、章節、會員學習進度</li>
+              <li>WooCommerce 管理商品、購物車、訂單</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <span class="step-badge">03</span>
+            <h2>金流與發票</h2>
+            <p>依實際金流商 API 文件與電子發票規格串接；需等客戶提供正式文件、測試帳號與欄位規格後再進行開發與測試。</p>
+            <ul class="feature-list">
+              <li>付款方式與訂單狀態會依正式 API 調整</li>
+              <li>電子發票欄位需確認公司戶、會員載具與捐贈流程</li>
+              <li>正式刷卡資料不會放在展示站或 GitHub Pages</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <span class="step-badge">04</span>
+            <h2>後續擴充</h2>
+            <p>多教師分潤、點數折抵、複雜預約、改期、退費規則會列為後續擴充，避免第一階段上線版一次承擔過重流程。</p>
+            <ul class="feature-list">
+              <li>日語老師先完整，韓語與英語保留分類擴充</li>
+              <li>進階預約規則可在第一版網站穩定後追加</li>
+              <li>報表、分潤與優惠機制可依實際營運資料設計</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section content-grid">
+          <div class="panel">
+            <div class="panel-head"><h2>素材替換方式</h2><span class="state-pill state-blue">方便迭代</span></div>
+            <ul class="lesson-list">
+              <li class="lesson-item"><span class="lesson-index">標</span><span><strong class="item-title">品牌 Logo 與色彩</strong><span class="item-meta">客戶確認後可替換 favicon、品牌字與主色系</span></span><span class="state-pill state-on">可換</span></li>
+              <li class="lesson-item"><span class="lesson-index">師</span><span><strong class="item-title">老師照片與介紹</strong><span class="item-meta">先以展示照片佔位，正式版改用授權照片</span></span><span class="state-pill state-on">可換</span></li>
+              <li class="lesson-item"><span class="lesson-index">課</span><span><strong class="item-title">課程影片與章節</strong><span class="item-meta">展示站使用 placeholder，正式版接 LMS 課程章節</span></span><span class="state-pill state-on">可換</span></li>
+              <li class="lesson-item"><span class="lesson-index">物</span><span><strong class="item-title">商品圖片與售價</strong><span class="item-meta">目前是展示商品，正式上線接 WooCommerce 商品資料</span></span><span class="state-pill state-on">可換</span></li>
+            </ul>
+          </div>
+          <aside class="panel">
+            <h2>展示站限制</h2>
+            <p>這個版本的價值是讓客戶確認流程與畫面，不代表正式營運系統已部署。</p>
+            <ul class="feature-list">
+              <li>localStorage 只存在單一瀏覽器</li>
+              <li>清除瀏覽器資料後 demo 狀態會重置</li>
+              <li>沒有真實付款、發票、簡訊、Email 寄送</li>
+              <li>正式資料庫與權限控管會在 WordPress 版本實作</li>
+            </ul>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer"><div class="page-shell"><span>微笑日語 · 正式版執行架構</span><span>展示網站 / WordPress / LMS / WooCommerce / 後續擴充</span></div></footer>
+    <script src="app.js?v=qa-20260507d"></script>
+  </body>
+</html>

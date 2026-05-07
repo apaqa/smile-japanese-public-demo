@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>結帳 | 微笑日語</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=qa-20260507d">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html"><span class="brand-mark"><span>日</span></span><span class="brand-text"><strong>微笑日語</strong><small>第一階段上線版</small></span></a>
+        <nav class="site-nav" aria-label="主要導覽">
+          <a href="index.html">首頁</a>
+          <a href="courses.html">課程</a>
+          <a href="dashboard.html">學習中心</a>
+          <a href="booking.html">預約課</a>
+          <a href="shop.html">商城</a>
+          <a href="admin.html">後台</a>
+          <a class="is-active" href="checkout.html">結帳</a>
+        </nav>
+        <div class="nav-actions"><a class="btn btn-outline" href="shop.html">回商城</a><a class="btn btn-primary" href="order-complete.html">完成訂單</a></div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="page-shell">
+        <div class="page-title">
+          <div>
+            <h1>結帳頁</h1>
+            <p>基礎金流與訂單流程展示：購物車、付款方式 placeholder、訂單摘要與完成後訂單紀錄。</p>
+          </div>
+          <span class="notice">展示畫面，不串接真實金流、發票或 API。</span>
+        </div>
+
+        <section class="checkout-layout">
+          <div>
+            <section class="shop-panel">
+              <div class="panel-head"><h2>購物車</h2><span class="state-pill state-pink">3 項商品</span></div>
+              <ul class="cart-list">
+                <li class="cart-item"><span class="item-icon">日</span><span><strong class="item-title">微笑日語 N5 初級班</strong><span class="item-meta">錄播課程 · 180 天觀看</span></span><strong>NT$2,800</strong></li>
+                <li class="cart-item"><span class="item-icon">🌸</span><span><strong class="item-title">櫻花學習御守</strong><span class="item-meta">幸運小物 · 數量 1</span></span><strong>NT$380</strong></li>
+                <li class="cart-item"><span class="item-icon">🎙</span><span><strong class="item-title">一對一口說診斷課</strong><span class="item-meta">05/13 19:30 · 安達老師</span></span><strong>NT$900</strong></li>
+              </ul>
+            </section>
+
+            <section class="shop-panel">
+              <div class="panel-head"><h2>付款方式</h2><span class="state-pill state-blue">Placeholder</span></div>
+              <div class="lesson-list" data-choice-group>
+                <button class="payment-card is-active" type="button"><span class="pay-logo">CC</span><span><strong class="item-title">信用卡</strong><span class="item-meta">展示付款選項，不送出真實刷卡資料</span></span><span class="state-pill state-on">推薦</span></button>
+                <button class="payment-card" type="button"><span class="pay-logo">LP</span><span><strong class="item-title">Line Pay</strong><span class="item-meta">未串接 API，僅呈現第一版網站流程</span></span><span class="state-pill">可選</span></button>
+                <button class="payment-card" type="button"><span class="pay-logo">TW</span><span><strong class="item-title">台灣 Pay</strong><span class="item-meta">可作為後續金流擴充項目</span></span><span class="state-pill">可選</span></button>
+                <button class="payment-card" type="button"><span class="pay-logo">ATM</span><span><strong class="item-title">轉帳</strong><span class="item-meta">可搭配後台人工對帳與訂單狀態</span></span><span class="state-pill state-warn">人工確認</span></button>
+              </div>
+            </section>
+
+            <section class="shop-panel">
+              <div class="panel-head"><h2>購買人資訊</h2><span class="state-pill state-pink">會員資料</span></div>
+              <form class="form-grid">
+                <div class="field"><label for="name">姓名</label><input id="name" value="王佳穎"></div>
+                <div class="field"><label for="email">Email</label><input id="email" value="student@example.com"></div>
+                <div class="field"><label for="phone">手機</label><input id="phone" value="0912-345-678"></div>
+                <div class="field"><label for="method">訂單通知</label><select id="method"><option>Email + 站內通知</option><option>僅 Email</option></select></div>
+                <div class="field-full"><label for="note">備註</label><textarea id="note" placeholder="需要備註課程、商品或預約需求可填寫於此"></textarea></div>
+              </form>
+            </section>
+          </div>
+
+          <aside>
+            <section class="shop-panel">
+              <h2>訂單摘要</h2>
+              <div class="summary-row"><span>N5 初級班</span><strong>NT$2,800</strong></div>
+              <div class="summary-row"><span>櫻花學習御守</span><strong>NT$380</strong></div>
+              <div class="summary-row"><span>一對一口說診斷課</span><strong>NT$900</strong></div>
+              <div class="summary-row"><span>第一版展示優惠</span><strong>-NT$180</strong></div>
+              <div class="summary-row total"><span>應付金額</span><strong>NT$3,900</strong></div>
+              <a class="btn btn-primary" href="order-complete.html">確認付款</a>
+              <p class="notice">付款完成後，訂單紀錄、學習權限與預約提醒會同步顯示在學習中心與後台。</p>
+            </section>
+            <section class="shop-panel">
+              <h2>後續可擴充</h2>
+              <ul class="feature-list">
+                <li>串接第三方金流 API</li>
+                <li>電子發票與會員發票紀錄</li>
+                <li>庫存同步與出貨狀態</li>
+                <li>訂單通知與付款失敗提醒</li>
+              </ul>
+            </section>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer"><div class="page-shell"><span>微笑日語 · 結帳</span><span>購物車 / 付款方式 / 訂單摘要 / 展示用流程</span></div></footer>
+    <script src="app.js?v=qa-20260507d"></script>
+  </body>
+</html>
